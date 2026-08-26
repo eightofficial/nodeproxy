@@ -1,0 +1,37 @@
+{
+  "logging": true,
+  "apps": [
+    {
+      "name": "appA",
+      "cmd": "npm start",
+      "cwd": "/home/hrn/Desktop/www/rayUi/ray-ui-kit"
+    }
+  ],
+  "servers": [
+    {
+      "port": 8080,
+      "https": {
+        "enabled": false,
+        "port": 8443,
+        "key": "",
+        "cert": ""
+      },
+      "routes": [
+        {
+          "host": "*",
+          "targets": [
+            "http://localhost:3000"
+          ],
+          "staticDir": null
+        },
+        {
+          "host": "https://hirenray.rest",
+          "targets": [
+            "http://localhost:3000"
+          ],
+          "staticDir": null
+        }
+      ]
+    }
+  ]
+}

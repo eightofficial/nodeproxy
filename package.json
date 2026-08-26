@@ -1,0 +1,29 @@
+{
+  "name": "@rexaray008/nodeproxy",
+  "version": "2.0.1",
+  "description": "A lightweight, zero-dependency reverse proxy / web server for Node.js, with pm2 app management and Cloudflare Tunnel integration to expose local projects on a real domain. One command to install, configure and run.",
+  "keywords": [
+    "node-proxy",
+    "nodeproxy",
+    "proxy",
+    "http-proxy",
+    "reverse-proxy",
+    "networking",
+    "server-proxy",
+    "api-proxy",
+    "nodejs",
+    "javascript"
+  ],
+  "main": "lib/server.js",
+  "bin": {
+    "nodeproxy": "./bin/cli.js"
+  },
+  "scripts": {
+    "start": "node bin/cli.js start"
+  },
+  "engines": {
+    "node": ">=16"
+  },
+  "license": "MIT",
+  "dependencies": {}
+}
